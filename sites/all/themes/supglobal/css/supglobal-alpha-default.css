@@ -1,0 +1,31 @@
+/*zone layouts and header*/
+#header{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1400px;
+}
+
+#section-header{
+    width: 100%;
+    float: left;
+    height: 100px;
+    background-color: #fff;
+    border-bottom: 4px solid #000;
+    position: fixed;
+}
+
+#hero{
+    margin-top: 104px;
+    width: 100%;
+    float: left;
+}
+
+#region-hero{
+    width: 100%;
+    margin: 0;
+}
+
+/*branding*/
+.logo-img{
+    margin-top: 20px;
+}
