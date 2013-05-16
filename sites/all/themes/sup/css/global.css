@@ -14,7 +14,7 @@ h1,h2,h3,h4,h5{
 
 /* header*/
 nav.navigation{
-    float:left;
+    float: right;
     font-family: "futura-pt-condensed";
     font-size: 18px;
     text-transform: uppercase;
@@ -32,19 +32,12 @@ nav.navigation a{
 
 
 /*search*/
-#header-search{
-    float: left;
-    width: 140px;
-    position:relative;
-    height: 29px;
-    margin-right: 30px;
-}
 form#search-block-form{
-   display:none;
-    margin-top: 49px;
-    width: 140px;
-    height: 29px;
-    background: url('../images/search-field.png') no-repeat;
+   float:right;
+   margin: 2px 10px 0 0;
+   width: 140px;
+   height: 29px;
+   background: url('../images/search-field.png') no-repeat;
 }
 
 form#search-block-form input.form-text{
@@ -59,18 +52,16 @@ box-shadow: none;
 z-index: 1;
 }
 .block-search-button, .block-search{
-    position: absolute;
-    top:1px;
+    /*position: absolute;
+    top:1px;*/
 }
 
 .block-search-button{
-    right: 7px;
-    top: 0;
 }
 
 span#search-button-toggle{
     cursor: pointer;
-
+    margin: 0 30px 0 34px;
 }
 
 
@@ -85,7 +76,7 @@ span#search-button-toggle{
 
 .block-general{
     float: left;
-    margin-top: 52px;
+    margin-top: 5px;
 }
 
 .block-general .contextual-links-trigger{
