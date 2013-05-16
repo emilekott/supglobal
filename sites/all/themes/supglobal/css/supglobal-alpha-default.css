@@ -2,7 +2,8 @@
 #header{
     margin-left: auto;
     margin-right: auto;
-    width: 1400px;
+    max-width: 1500px;
+    width: 100%;
 }
 
 #section-header{
@@ -12,6 +13,7 @@
     background-color: #fff;
     border-bottom: 4px solid #000;
     position: fixed;
+    z-index: 200;
 }
 
 #hero{
@@ -28,4 +30,49 @@
 /*branding*/
 .logo-img{
     margin-top: 20px;
+}
+
+
+/*navigation*/
+nav.navigation{
+    margin-top: 56px;
+}
+
+nav.navigation li{
+    width: 135px;
+    height: 34px;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    background-position: 0 0;
+}
+
+nav.navigation li a{
+    background-color: #fff;
+    
+}
+
+nav.navigation li:hover,
+nav.navigation li.active-trail{
+    background-position: 0 -34px !important;
+}
+
+nav.navigation li.menu-367{
+    background: url('../images/nav/navbar-features.png') no-repeat;
+}
+nav.navigation li.menu-368{
+    background: url('../images/nav/navbar-reviews.png') no-repeat;
+}
+
+nav.navigation li.menu-369{
+    background: url('../images/nav/navbar-news.png') no-repeat;
+}
+
+nav.navigation li.menu-370{
+    background: url('../images/nav/navbar-brands.png') no-repeat;
+}
+
+nav.navigation li.menu-371{
+    background: url('../images/nav/navbar-dir.png') no-repeat;
+    width: 149px;
 }

@@ -1,1 +1,205 @@
+body{
+    font-family: "futura-pt", sans-serif;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+
+}
+
+/* header*/
+nav.navigation{
+    font-family: "futura-pt-condensed";
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 14px;
+}
+
+nav.navigation a{
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+
+/*search*/
+form#search-block-form{
+   display:none;
+    margin-top: 49px;
+    width: 140px;
+    height: 29px;
+    background: url('../images/search-field.png') no-repeat;
+}
+
+form#search-block-form input.form-text{
+    width: 110px;
+    color: #666;
+    background: transparent;
+    border: none;
+    margin:3px;
+    -moz-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+z-index: 1;
+}
+.block-search-button, .block-search{
+    position: absolute;
+    top:1px;
+}
+
+.block-search-button{
+    right: 7px;
+    top: 0;
+}
+
+span#search-button-toggle{
+    cursor: pointer;
+
+}
+
+
+
+
+
+/*social and login*/
+.block-general{
+    float: left;
+    margin-top: 52px;
+}
+
+.block-general .contextual-links-trigger{
+    display: none !important;
+}
+.social-button{
+    margin-right: 30px;
+}
+
+
+
+
+
+/*slider*/
+/*flexslider styling */
+
+.flexslider .slides .views-field-field-image img {
+    max-width: 100%;
+    width: auto !important;
+    height: auto;
+}
+
+.flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
+}
+
+.flexslider {
+    margin: 0;
+    background: #fff;
+    border: none;
+    position: relative;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    box-shadow:none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    zoom: 1;
+}
+
+.flex-control-nav{
+    display: none;
+}
+
+.flex-direction-nav a {
+    width: 28px;
+    height: 47px;
+    background: url('../images/slider-nav.png') no-repeat 0 0;
+    top: 50%;
+    z-index: 10;
+    cursor: pointer;
+    text-indent: -9999px;
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+    margin-top: -45px;
+}
+.flexslider:hover .flex-prev {
+    opacity: 0;
+    left: 3%;
+}
+
+.flexslider:hover .flex-next {
+    opacity: 0;
+    right: 3%;
+}
+
+ul.slides li{
+    position: relative;
+    overflow: hidden;
+}
+
+ul.slides li .views-field-field-description{
+    position: absolute;
+    bottom: -130px;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+ul.slides li .views-field-field-description .field-content{
+    padding: 20px 3%;
+}
+
+ul.slides li .views-field-field-description h2.slide-title,
+ul.slides li .views-field-field-description p.slide-description{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-shadow: 3px 3px 3px #000;
+    filter: dropshadow(color=#000, offx=3, offy=3);
+}
+
+ul.slides li  .views-field-field-link{
+    position: absolute;
+    top: 40px;
+    right: 3%;
+}
+
+ul.slides li .views-field-field-link img{
+    width: 75px !important;
+    height: 75px;
+    opacity: 0;
+}
+
+ul.slides li .views-field-field-link a:hover img{
+    opacity: 1;
+}
+
+ul.slides li .views-field-edit-node{
+    position: absolute;
+    top: 40px;
+    left: 3%;
+    font-size: 20px;
+}
+
+ul.slides li:hover .views-field-edit-node a{
+    display: inline;
+}
+
+ul.slides li .views-field-edit-node a{
+    color: #fff;
+    text-decoration: none;
+    display: none;
+}
+ul.slides li .views-field-edit-node a:hover{
+    text-decoration: underline;
+}
 

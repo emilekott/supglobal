@@ -1,0 +1,5 @@
+name = General
+description = General module to alter forms etc
+core = 7.x
+
+project = "General"

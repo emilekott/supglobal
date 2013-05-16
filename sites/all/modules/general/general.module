@@ -1,0 +1,94 @@
+<?php
+function general_block_info() {
+   
+   $blocks['login-block'] = array(
+    'info' => t('Login Header Link'),
+  );
+   $blocks['social-block'] = array(
+    'info' => t('Social Links'),
+  );
+   $blocks['search-button'] = array(
+    'info' => t('Search Button'),
+  );
+   $blocks['copyright'] = array(
+    'info' => t('Copyright'),
+  );
+
+   
+  return $blocks;
+}
+ 
+/**
+ * Implementation of hook_block_view().
+ */
+function general_block_view($delta='') {
+  
+  $block = array();
+  switch ($delta) {
+    case 'login-block':
+      $block['subject'] = '';
+      $block['content'] = login_block_content();
+      break;
+  case 'social-block':
+      $block['subject'] = '';
+      $block['content'] = social_block_content();
+      break;
+ case 'search-button':
+      $block['subject'] = '';
+      $block['content'] = search_button_content();
+      break;
+  
+  case 'copyright':
+      $block['subject'] = '';
+      $block['content'] = copyright_content();
+      break;
+   
+  }
+  return $block;
+}
+
+
+ 
+/*content for login (header) block */
+
+function login_block_content(){
+    $img_src = base_path() . path_to_theme().'/images/login.png';
+    $options = array(
+        'html' => TRUE,
+        'attributes' => array(
+            'class' => array('login-button'),
+        ),
+    );
+    $html = l('<img src="'.$img_src.'" alt="login / account" title="Login / Account" />','user',$options);
+    return $html;
+}
+
+
+/*content for social header block */
+
+function social_block_content(){
+    $img_path = base_path() . path_to_theme().'/images/';
+    $fb_src = $img_path.'facebook.png';
+    $twitter_src = $img_path.'twitter.png';
+    $options = array(
+        'html' => TRUE,
+        'attributes' => array(
+            'class' => array('social-button'),
+        ),
+    );
+    $fb = l('<img src="'.$fb_src.'" alt="facebook" />','http://www.facebook.com/supglobal',$options);
+    $twitter = l('<img src="'.$twitter_src.'" alt="twitter" />','https://twitter.com/supglobal',$options);
+   
+    
+    $html = '<div id="social-buttons">'.$fb.$twitter.'</div>';
+    return $html;
+}
+
+
+function search_button_content(){
+    $search_img = base_path() . path_to_theme().'/images/search.png';
+    
+    $html ='<span id="search-button-toggle"><img src="'.$search_img.'" alt="Search" title="Search" /></span>';
+    return $html;
+}
+
