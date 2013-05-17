@@ -1,5 +1,6 @@
 body{
     font-family: "futura-pt", sans-serif;
+    background: url('../images/body-bg.png') repeat;
 }
 .clear{
     clear: both;
@@ -10,6 +11,10 @@ h1,h2,h3,h4,h5{
     font-style: normal;
     font-weight: 700;
 
+}
+
+.page{
+    background: url('../images/bg.png') repeat-y center;
 }
 
 /* header*/
@@ -210,3 +215,138 @@ ul.slides li .views-field-edit-node a:hover{
     text-decoration: underline;
 }
 
+
+
+
+
+/*content*/
+#region-content, #region-sidebar-first{
+    padding-top: 30px;
+}
+
+
+
+/*latest view*/
+.view-latest .views-row{
+    height: 165px;
+    margin-bottom: 20px;
+}
+
+/*title is condensed medium 18px caps in 38d530 */
+.view-latest .views-field-title{
+    font-size: 20px;
+    font-family: "futura-pt-condensed";
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: absolute;
+    bottom:15px;
+    left:15px;
+    line-height: 15px;
+}
+
+.view-latest .views-field-title a{
+    
+    text-decoration: none;
+}
+
+
+/*customise colours based on taxonomy term*/
+/*news*/
+.view-latest .views-field-title a{
+    color: #ADDE36;
+}
+
+/*features*/
+.view-latest .views-field-title .tid-7 a,
+.view-latest .views-field-title .tid-8 a,
+.view-latest .views-field-title .tid-9 a,
+.view-latest .views-field-title .tid-10 a,
+.view-latest .views-field-title .tid-11 a{
+    color: #4BCBD9;
+}
+
+/*review*/
+.view-latest .views-field-title .tid-6 a{
+    color: #38D530;
+}
+
+/*sponsored*/
+.view-latest .views-field-title .tid-12 a{
+    color: #5DD4BF;
+}
+
+
+
+
+
+.view-latest .views-field-title a:hover{
+    text-decoration: underline;
+}
+
+.view-latest .views-field-comment-count{
+    position: absolute;
+    bottom: 9px;
+    right:15px;
+    background: url("../images/comment.png") no-repeat right;
+    padding-bottom: 3px;
+}
+
+.view-latest .views-field-comment-count a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    line-height: 14px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+}
+.view-latest .views-field-comment-count a:hover{
+    text-decoration: underline;
+}
+
+.view-latest .views-field-nid{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 57px;
+    background: url("../images/vignette.png") no-repeat;
+    
+}
+
+.view-latest .views-field-nid .field-content{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.view-latest .views-field-nid .field-content .vignette{
+    width: 100%;
+    height: 100%;
+}
+
+/*news */
+.view-latest .views-field-nid .field-content .vignette{
+    background:url("../images/cat-band-news.png") bottom no-repeat;
+}
+
+/*features*/
+.view-latest .views-field-nid .field-content .vignette.tid-7,
+.view-latest .views-field-nid .field-content .vignette.tid-8,
+.view-latest .views-field-nid .field-content .vignette.tid-9,
+.view-latest .views-field-nid .field-content .vignette.tid-10,
+.view-latest .views-field-nid .field-content .vignette.tid-11{
+    background:url("../images/cat-band-feature.png") bottom no-repeat;
+}
+
+/*reviews*/
+.view-latest .views-field-nid .field-content .vignette.tid-6{
+    background:url("../images/cat-band-reviews.png") bottom no-repeat;
+}
+
+/*sponsored*/
+.view-latest .views-field-nid .field-content .vignette.tid-12{
+    background:url("../images/cat-band-sponsor.png") bottom no-repeat;
+}
