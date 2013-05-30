@@ -1,4 +1,15 @@
 <?php
+/*
+ * Slider script on feature nodes 
+ * 
+ */
+function general_node_view($node, $view_mode, $langcode){
+    if ($node->type == 'feature'){
+        drupal_add_js(drupal_get_path('module', 'general').'/slider.js');
+    }
+}
+
+
 function general_block_info() {
    
    $blocks['login-block'] = array(

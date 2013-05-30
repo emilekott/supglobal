@@ -3,7 +3,7 @@
 
 #section-header{
 
-    height: 100px;
+    height: 80px;
     background-color: #fff;
     border-bottom: 4px solid #000;
     position: fixed;
@@ -12,7 +12,7 @@
 }
 
 #hero{
-    margin-top: 104px;
+    margin: 84px 0 30px 0;
     width: 100%;
     float: left;
 }
@@ -24,6 +24,7 @@
 
 /*branding*/
 .logo-img{
+    margin-top:3px;
 }
 
 

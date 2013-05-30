@@ -27,3 +27,30 @@ function sup_form_alter(&$form, &$form_state, $form_id) {
     }
    
 }
+
+function sup_breadcrumb($variables) {
+    $breadcrumb = $variables['breadcrumb'];
+    
+    if (!empty($breadcrumb)) {
+        // Provide a navigational heading to give context for breadcrumb links to
+        // screen-reader users. Make the heading invisible with .element-invisible.
+        $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
+
+        $crumbs = '<div class="breadcrumb">';
+        $array_size = count($breadcrumb);
+        $i = 0;
+        while ($i < $array_size) {
+            $crumbs .= '<span class="breadcrumb-' . $i;
+            if ($i == 0) {
+                $crumbs .= ' first';
+            }
+            /* if ($i+1 == $array_size) {
+              $crumbs .= ' last';
+              } */
+            $crumbs .= '">' . $breadcrumb[$i] . '</span>&nbsp;&nbsp;>&nbsp;&nbsp;';
+            $i++;
+        }
+        $crumbs .= '<span class="active">' . drupal_get_title() . '</span></div>';
+        return $crumbs;
+    }
+}

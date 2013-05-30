@@ -2,27 +2,28 @@
 
     $(document).ready(function(){
   
-        $(".view-caroufredsel .view-content").carouFredSel({
-            width: '100%',
-            height: 'auto',
-            items: {
-                visible: 3,
-                start: -1
+        $(".flexslider").hover(
+            function(){
+               
+                $(this).find(".flex-prev").animate({
+                    opacity:"0.8"
+                });
+                $(this).find(".flex-next").animate({
+                    opacity:"0.8"
+                });
+              
             },
-            scroll: {
-                items: 1,
-                duration: 600,
-                timeoutDuration: 3500
-            },
-            prev: '#carou-prev',
-            next: '#carou-next',
-         
-            swipe : {
-                items: 1,
-                onTouch : true
+            function(){
+             
+                $(this).find(".flex-prev").animate({
+                    opacity:"0"
+                });
+                $(this).find(".flex-next").animate({
+                    opacity:"0"
+                });
+              
             }
-
-        });
+            );
 
 
 
