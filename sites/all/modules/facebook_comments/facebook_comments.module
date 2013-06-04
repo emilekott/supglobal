@@ -49,7 +49,7 @@ function facebook_comments_block_view($delta = '') {
     $width = variable_get('facebook_comments_block_width', 208);
     $amount = variable_get('facebook_comments_block_amount', 15);
     $block = array(
-      'subject' => t('Facebook comments'),
+      'subject' => t('Comments'),
       'content' => facebook_comments_display($width, $amount),
     );
   }

@@ -8,7 +8,13 @@
   <?php endif; ?>
   <?php print render($title_suffix); ?>
   <?php if ($display_submitted): ?>
-  <footer class="submitted">By <span class="author-name"><?php print $name; ?></span> on <?php print $date; ?></footer>
+  <?php
+    $user = user_load($node->uid);
+    $user_name = $user->field_name['und'][0]['value'];
+    $user_link = l($user_name,'user/'.$user->uid);
+  ?>
+  
+  <footer class="submitted">By <span class="author-name"><?php print $user_link; ?></span> on <?php print $date; ?></footer>
   <?php endif; ?>  
   
   <div<?php print $content_attributes; ?>>
