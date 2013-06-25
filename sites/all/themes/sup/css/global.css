@@ -429,7 +429,24 @@ ul.slides li .views-field-field-category-image img{
   height: 100%;
 }
 
+.media-vimeo-outer-wrapper{
+  max-width: 100%;
+  height: auto !important;
+}
 
+.media-vimeo-preview-wrapper{
+    position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0 !important; overflow: hidden;
+}
+
+media-vimeo-preview-wrapper iframe.vimeo-player{
+ position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
 
 /*border*/
 
