@@ -577,3 +577,36 @@ footer.submitted{
 }
 
 
+
+
+/*news block homepage */
+.block-news-block{
+  clear: both;
+  margin-top: 20px;
+  float: left;
+  padding: 20px;
+}
+
+.block-news-block .views-row{
+  margin-bottom: 15px;
+}
+
+.block-news-block .views-field-field-image{
+  float: left;
+  width: 80px;
+}
+
+.block-news-block .views-field-body, .block-news-block .views-field-nid{
+  float: right;
+  width: 180px;
+}
+.block-news-block .views-field-body p{
+  margin-bottom: 0;
+  line-height: 18px;
+}
+
+.block-news-block .views-field-nid{
+  text-transform: uppercase;
+  font-family: "futura-pt-condensed";
+  font-size: 16px;
+}
