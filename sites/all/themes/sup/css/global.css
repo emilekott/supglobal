@@ -610,3 +610,78 @@ footer.submitted{
   font-family: "futura-pt-condensed";
   font-size: 16px;
 }
+
+
+
+
+/*pager */
+.view .item-list{
+    margin-bottom: 20px;
+}
+
+.pager {
+    background: transparent;
+    border: none;
+
+}
+
+.pager li {
+    border: none;
+    color: #fff;
+    font: bold 12px/1.2 Arial, sans-serif;
+    outline: 0;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 5px !important ;
+}
+
+.pager li.pager-next {
+    border: none;
+    border-color: #DDD #BBB #999;
+    right: 60px;
+}
+
+.pager li.pager-last, .pager li.pager-last a, .pager li.pager-last a:hover {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.pager li.first, .pager li.first a, .pager li.first a:hover {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.pager li.pager-previous a{
+    width: 90px;
+}
+
+.pager li a {
+    color: #fff;
+    text-decoration: none;
+    background: #afbdb8;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: background-color 0.4s ease;
+    -moz-transition: background-color 0.4s ease;
+    -o-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease;
+    border: none;
+}
+
+
+.pager li a:hover {
+    background: #505050;
+    color: #fff;
+}
+
+.pager li.pager-current {
+    background: #505050;
+    color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
